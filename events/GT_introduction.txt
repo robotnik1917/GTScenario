@@ -1,0 +1,16 @@
+namespace = GT_introduction
+
+country_event = {
+	id = GT_introduction.1
+	title = GT_introduction.1.t
+	desc = GT_introduction.1.d
+	picture = INVENTION_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = GT_introduction.1.a
+	}
+}

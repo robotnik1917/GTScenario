@@ -1,0 +1,31 @@
+namespace = GT_protected_area
+
+province_event = {
+	id = GT_protected_area.1
+	title = GT_protected_area.1.t
+	desc = GT_protected_area.1.d
+	picture = GENERALS_DISCUSSING_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = GT_protected_area.1.a
+	}
+}
+
+province_event = {
+	id = GT_protected_area.2
+	title = GT_protected_area.2.t
+	desc = GT_protected_area.2.d
+	picture = GENERALS_DISCUSSING_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		always = yes
+	}
+
+	option = {
+		name = GT_protected_area.2.a
+	}
+}

@@ -1,0 +1,97 @@
+namespace = event_GP7_opinion
+
+country_event =
+{
+    id = event_GP7_opinion.1
+    title = event_GP7_opinion.1.t
+    desc = event_GP7_opinion.1.d
+    picture = ANGLICAN_SERMON_eventPicture
+
+    hidden = yes
+
+    mean_time_to_happen = {years = 7} 
+
+    trigger =
+    {
+        is_great_power = yes 
+        NOT = {great_power_rank = 8}
+        great_power_rank = 7
+    }
+
+    immediate = 
+    {
+        hidden_effect = 
+        {
+			if = 
+			{
+				limit = { ai = no }
+				every_country =
+				{
+					limit = 
+					{
+						OR = 
+						{
+							is_subject = no
+							is_subject_of_type = tributary_state
+						}
+					}
+
+					reverse_add_opinion = 
+					{
+						who = ROOT
+						modifier = GT_Superiority_Complex
+					}
+				}
+			}
+			if = 
+			{
+				limit = { 
+					ai = yes
+					is_emperor = yes
+				}
+				every_country =
+				{
+					limit = 
+					{
+						is_part_of_hre = no
+						government_rank = 2
+					}
+
+					reverse_add_opinion = 
+					{
+						who = ROOT
+						modifier = GT_Superiority_Complex
+					}
+				}
+			}
+			if = 
+			{
+				limit = { 
+					ai = yes
+					is_emperor = no
+				}
+				every_country =
+				{
+					limit = 
+					{
+						is_subject = no
+					}
+
+					reverse_add_opinion = 
+					{
+						who = ROOT
+						modifier = GT_Superiority_Complex
+					}
+				}
+			}
+        }
+    }
+
+    option =
+    {
+        name = event_GP7_opinion.1.a
+
+        #if event breaks with ai, try code below
+        #ai_chance = {factor = 100}
+    }
+}

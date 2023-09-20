@@ -1,0 +1,17 @@
+1 = {
+	governing_capacity_modifier = -0.3 #GT
+}
+2 = {
+	diplomats = 1
+	governing_capacity = 200
+	global_autonomy = -0.025
+	governing_capacity_modifier = -0.15 #GT
+}
+
+3 = {
+	governing_capacity = 400
+	global_autonomy = -0.05
+	max_absolutism = 5
+	free_leader_pool = 1
+	diplomats = 1
+}

@@ -1,0 +1,13 @@
+﻿l_english:
+ #Diplomacy
+ NOALL_WE_DISLIKE:0 "We cannot ask $WHO$ for this as we need to have a SPLENDID (+75) opinion of them, currently at $VAL$."
+ NOALL_THEY_DISLIKE:0 "$WHO$ dislikes us, so we cannot ask them. They need to have a SPLENDID (+75) opinion of us and it is currently $VAL$."
+#Inability to diplo vassilize message
+ VASSALINVALID:0 "To offer Vassalization you must 1) guarantee the target 2) have a relation of at least +190 3) the target country must be at peace."
+#Form coalition text adjustment
+ MINAGGRESSIVEEXPANSION:0 "A human controlled nation requires a value of 15 aggressive expansion when targetting another human controlled nation. AI still requires a value of 50 to target any nation and to be targetted by any nation."
+#Edicts
+ edict_of_absolutism_tt:0 "Allows State Edict '§YEdict of Absolutism§!'\n (Local prosperity growth: §G0.25§!)\n"
+#Missions
+ fra_alternatively_10_dev_spread_and_tt:1 "§G10§! £adm£ £dip£ £mil£ Development will be distributed in §YBurgundian§! provinces as well as:"
+ fra_complete_via_opinion_alliance_and_trust_tt:2 "Alternatively, if we complete the mission via opinion and alliance with the crown of @BUR Burgundy, they will be more likely to side with us once the §YBurgundian Inheritance§! Imperial Incident begins"

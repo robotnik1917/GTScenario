@@ -1,0 +1,28 @@
+namespace = GT_dnz
+
+country_event = {
+	id = GT_dnz.1
+	title = GT_dnz.1.t
+	desc = GT_dnz.1.d
+	is_triggered_only = yes
+	trigger = {
+		always = yes
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				overlord = {
+					tag = TEU
+				}
+			}
+			west_prussia_area = {
+				add_core = TEU
+			}
+		}
+	}
+
+	option = {
+		name = GT_dnz.1.a
+	}
+}
