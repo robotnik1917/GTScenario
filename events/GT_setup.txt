@@ -93,27 +93,11 @@ country_event = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				tag = MNG
-			}
-			jiangsu_area = {
-				set_province_flag = gt_protected_area
-				set_variable = {
-					which = gt_campaign_nation_order
-					which = ROOT
-				}
-			}
-		}
-		else = {
-			capital_scope = {
-				area = {
-					set_province_flag = gt_protected_area
-					set_variable = {
-						which = gt_campaign_nation_order
-						which = ROOT
-					}
-				}
+		capital_scope = {
+			set_province_flag = gt_protected_area
+			set_variable = {
+				which = gt_campaign_nation_order
+				which = ROOT
 			}
 		}
 	}
