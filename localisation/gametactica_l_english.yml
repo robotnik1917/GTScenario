@@ -6,7 +6,7 @@
  CANNOT_INCREASE_STABILITY: "It's not possible to increase stability while at war."
 #Inability to reduce war exhaustion message
  CANNOT_REDUCE_WAR_EXHAUSTION_AT_WAR: "It's not possible to reduce war exhaustion while at war."
-#Score setup
+#Setup
  GT_setup.1.t: "Score setup event"
  GT_setup.1.a: ""
  GT_setup.1.d: ""
@@ -16,6 +16,9 @@
  GT_setup.7.t: "Setup common flags and variables"
  GT_setup.7.a: ""
  GT_setup.7.d: ""
+ GT_setup.8.t: "Set protected provinces"
+ GT_setup.8.a: ""
+ GT_setup.8.d: ""
 #Introduction
  GT_introduction.1.t: "Introduction"
  GT_introduction.1.d: "During this campaign your capital province is protected, this means that once you hold a province within it you cannot lose it.\nAlso, if and when you achieve 'Great Power' status, you will begin developing a superiority complex which will cause you to view lesser nations and competitors alike with disdain.  This effect will only worsen as you wax in power.  As alliances require high mutual relations, expect to make less use of them as a 'Great Power'." 	
@@ -38,9 +41,9 @@
 #Event modifiers
  gt_imperial_objective_province_modifier: "§YImperial objective§"
  gt_campaign_nation_inheritance_prevention: "Campaign nation inheritance prevention"
- gt_campaign_nation_inheritance_prevention_desc: "This prevents players from being accidently inherited"
+ desc_gt_campaign_nation_inheritance_prevention: "This prevents players from being accidently inherited"
  gt_same_religion_as_hre: "Same religion as HRE"
- gt_same_religion_as_hre_desc: "Our faith is the same as the official religion of the Holy Roman Empire. This grants our nation a certain moral legitimacy."
+ desc_gt_same_religion_as_hre: "Our faith is the same as the official religion of the Holy Roman Empire. This grants our nation a certain moral legitimacy."
 #Province triggered modifiers
  custodian_of_the_two_holy_mosques: "Custodian of the Holy Cities"
  desc_custodian_of_the_two_holy_mosques: "We control the cities of Mecca and Medina and with them the most sacred shrines in the Islamic world."

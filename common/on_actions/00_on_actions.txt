@@ -1550,19 +1550,6 @@ on_successive_emperor = {
 # FROM = Previous Emperor
 # ROOT = New Emperor 
 on_emperor_elected = {
-	#GT
-	if = {
-		limit = {
-			FROM = {
-				exists = yes
-				same_religion_as_hre = yes
-				is_subject = no
-			}
-		}
-		country_event = {
-			id = GT_score.2
-		}
-	}
 	every_elector = {
 		if = {
 			limit = {
@@ -4739,19 +4726,18 @@ on_province_owner_change = {
 	if = {
 		limit = {
 			has_province_flag = gt_protected_area
-			AND = {
-				FROM = { has_country_flag = gt_campaign_nation }
-				FROM = {
-					check_variable = {
-						which = gt_campaign_nation_order
-						which = ROOT
-					}
-				}
+			FROM = { has_country_flag = gt_campaign_nation }
+			FROM = {
 				check_variable = {
 					which = gt_campaign_nation_order
-					which = FROM
+					which = ROOT
 				}
 			}
+			check_variable = {
+				which = gt_campaign_nation_order
+				which = FROM
+			}
+			
 		}
 		province_event = {
 			id = GT_protected_area.1
@@ -4760,6 +4746,21 @@ on_province_owner_change = {
 		add_devastation = 20
 		province_event = {
 			id = GT_protected_area.2
+		}
+	}
+	#GT protected area moving with migratory tribe
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = gt_campaign_nation
+				is_migratory_tribe = yes
+			}
+		}
+		owner = {
+			country_event = {
+				id = GT_setup.8
+				days = 1
+			}
 		}
 	}
 }

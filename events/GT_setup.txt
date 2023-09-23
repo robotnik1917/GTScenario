@@ -93,16 +93,38 @@ country_event = {
 				}
 			}
 		}
-		capital_scope = {
-			set_province_flag = gt_protected_area
-			set_variable = {
-				which = gt_campaign_nation_order
-				which = ROOT
-			}
-		}
+        country_event = {
+            id = GT_setup.8
+        }
 	}
 
 	option = {
 		name = GT_setup.7.a
+	}
+}
+
+#Set protected provinces
+country_event = {
+    id = GT_setup.8
+    title = GT_setup.8.t
+    desc = GT_setup.8.d
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		always = yes
+	}
+
+    immediate = {
+        capital_scope = {
+            set_province_flag = gt_protected_area
+            set_variable = {
+                which = gt_campaign_nation_order
+                which = ROOT
+            }
+        }
+    }
+
+    option = {
+		name = GT_setup.8.a
 	}
 }
