@@ -6,6 +6,7 @@
  CANNOT_INCREASE_STABILITY: "It's not possible to increase stability while at war."
 #Inability to reduce war exhaustion message
  CANNOT_REDUCE_WAR_EXHAUSTION_AT_WAR: "It's not possible to reduce war exhaustion while at war."
+ NO_CAPITAL_MOVE_MIGRATORY_TRIBE: "Migratory tribes cannot move capitals."
 #Setup
  GT_setup.1.t: "Score setup event"
  GT_setup.1.a: ""
